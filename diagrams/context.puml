@@ -8,7 +8,7 @@ System_Ext(keycloak, "Keycloak", "Сервер аутентификации (SSO
 System_Ext(grafana, "Grafana", "Мониторинг и дашборды")
 
 Rel(engineer, System_IoT, "Управление и мониторинг платформы", "HTTP/REST, UI")
-Rel(device, System_IoT, "Телеметрия и команды", "MQTT/HTTP")
+Rel(device, System_IoT, "Телеметрия и команды", "Kafka/HTTP")
 Rel(engineer, grafana, "Просмотр метрик и логов", "HTTP (dashboards)")
 Rel(System_IoT, keycloak, "Запрос токена / проверка JWT", "OIDC")
 Rel(System_IoT, grafana, "Экспорт метрик и логов", "Prometheus, Loki")
